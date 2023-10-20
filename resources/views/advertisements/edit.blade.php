@@ -42,7 +42,7 @@
 
 
                         @if (!empty($advertisement->photos))
-
+<div class="text-center">
                         @foreach (json_decode($advertisement->photos) as $photo)
 
                         <div class="photo-container">
@@ -76,9 +76,9 @@
 
                            
                         </div>
+                       
 
-
-                        @endforeach
+                        @endforeach </div>
                         <div>
                             <label for="photo">Ścieżki :</label>
                             <input type="text" name="photo" id="photo" class="form-control" value=" {{$advertisement->photos}} " required>

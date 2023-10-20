@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div class="col-md-6 text-center p-4">
-                <div class="card-body ">
+                <div class="card-body">
                     <h2 class="card-title pb-2">{{ $advertisement->title }}</h2>
                     <p class="card-text text-start">{{ $advertisement->description }}</p>
                     <h5 class="card-text"> Cena: {{ $advertisement->price }} zł</h5>

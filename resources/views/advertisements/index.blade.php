@@ -8,7 +8,7 @@
     <div class="card mb-3">
         <div class="row g-0">
             <div class="col-md-6 align-self-center">
-                <div class="card-img-bottom">
+                <div class="card-img-bottom text-center">
 
                     @if (!empty($advertisement->photos))
 
