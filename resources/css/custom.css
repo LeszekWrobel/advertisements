@@ -1,0 +1,21 @@
+.photo-container {
+    position: relative;
+    display: inline-block;
+}
+
+.photo-actions {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bs-primary);
+  }
+
+  .custom-truncate {
+    max-height: 4.5em; /* Ustaw maksymalną wysokość na 4.5 em (4 linie tekstu) */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
