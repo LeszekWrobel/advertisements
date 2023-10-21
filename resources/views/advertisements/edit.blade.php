@@ -33,6 +33,16 @@
                         </div>
 
 
+                        <div id="drop-area">
+        Przeciągnij i upuść tutaj lub kliknij, aby wybrać pliki.
+        <input type="file" id="fileInput" multiple style="display: none">
+        <div id="image-container"></div>
+        <p id="error-message">
+            Plik "<span id="error-file-name"></span>" nie jest obrazem. Proszę wybrać inny plik.
+            <span id="confirm-button">OK</span>
+        </p>
+    </div>
+
 
                         <div class="form-group mt-4">
                             <label for="photos">Zdjęcia</label>
@@ -96,9 +106,7 @@
         </div>
     </div>
 </div>
-<script>
 
+<script src="draganddrop.js"></script>
 
-
-</script>
 @endsection

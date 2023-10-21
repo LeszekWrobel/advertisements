@@ -5,7 +5,7 @@
  //src="https://unpkg.com/dropzone@6.0.0-beta.1/dist/dropzone-min.js";
 
  //import './delete_photo';
- import  './axios-script';
+ import  './axios-scriptOld';
  // resources/js/app.js
 
 import Dropzone from 'dropzone';
@@ -13,3 +13,4 @@ import Dropzone from 'dropzone';
 Dropzone.autoDiscover = false;
 window.Dropzone = Dropzone;
 
+import './draganddrop';
