@@ -12,9 +12,11 @@
 
                     @if (!empty($advertisement->photos))
 
-                    @foreach (json_decode($advertisement->photos) as $photo)
-                    <img class="img-fluid rounded m-2" src="{{ 'storage/'.($photo) }}" width="150" alt="Zdjęcie ogłoszenia">
-                    @endforeach
+                        @foreach (json_decode($advertisement->photos) as $photo)
+                            @if($loop->index < 6) 
+                            <img class="img-fluid rounded m-2" src="{{ 'storage/'.($photo) }}" width="150" alt="Zdjęcie ogłoszenia">
+                            @endif
+                        @endforeach
 
 
                     @endif
@@ -38,7 +40,7 @@
 
                 <div class="mb-3 d-flex justify-content-center">
                     <a href="{{ route('advertisements.show', $advertisement->id) }}" class="btn btn-success me-1">Szczegóły</a>
-                    
+
                     @if (auth()->id() === $advertisement->user_id)
                     <a href="{{ route('advertisements.edit', $advertisement->id) }}" class="btn btn-primary me-1">Edytuj</a>
                     <form method="POST" action="{{ route('advertisements.destroy', $advertisement->id) }}" class="text-center">
@@ -46,7 +48,7 @@
                         @method('DELETE')
                         <button type="submit" class="btn btn-danger" onclick="return confirm('Czy na pewno chcesz usunąć to ogłoszenie?'.$photo)">Usuń</button>
 
-                        
+
 
 
                     </form>
